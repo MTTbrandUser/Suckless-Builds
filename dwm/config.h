@@ -8,13 +8,13 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int vertpad            = 5;       /* vertical padding of bar */
 static const int sidepad            = 10;       /* horizontal padding of bar */
-static const char *fonts[]          = { "Iosevka:size=10" };
-static const char dmenufont[]       = "Iosevka:size=10";
-static const char col_gray1[]       = "#282a36";
-static const char col_gray2[]       = "#44475a";
-static const char col_gray3[]       = "#f8f8f2";
-static const char col_gray4[]       = "#f8f8f2";
-static const char col_cyan[]        = "#bd93f9";
+static const char *fonts[]          = { "JetBrains Mono:size=10" };
+static const char dmenufont[]       = "JetBrains Mono:size=10";
+static const char col_gray1[]       = "#141d22";
+static const char col_gray2[]       = "#2f2e33";
+static const char col_gray3[]       = "#f9e7fb";
+static const char col_gray4[]       = "#f9e7fb";
+static const char col_cyan[]        = "#29b1a0";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -60,7 +60,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty" };
-static const char *thunarcmd[] = { "nemo", NULL };
+static const char *thunarcmd[] = { "thunar", NULL };
 static const char *roficmd[] = { "rofi", "-show", "drun", "-show-icons", NULL };
 
 static Key keys[] = {
